@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'games/GameList.dart';
 
 // container for the main menu
 // multiple vertical buttons on main screen (Games, Settings, About for now)
@@ -15,6 +16,10 @@ class MainMenu extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const GameList()),
+                );
               },
               child: const Text('Games'),
             ),
