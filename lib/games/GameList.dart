@@ -5,6 +5,8 @@ class GameList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var games =[];
+
     return Scaffold(
       // color: Colors.blue,
       // go back to main menu
@@ -26,11 +28,13 @@ class GameList extends StatelessWidget {
               },
               child: const Text('Game 1'),
             ),
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
               },
               child: const Text('Game 2'),
             ),
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
               },
